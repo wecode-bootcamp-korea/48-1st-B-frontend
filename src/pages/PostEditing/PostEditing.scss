@@ -1,0 +1,61 @@
+.commentUserBox {
+  margin: 20px;
+  gap: 0 24px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .commentUserWrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .commentUser {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .commentContentBox {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 20px;
+
+      .commentUserName {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .commentTextArea {
+        border-radius: 6px;
+        border: 1px solid var(--grey-88, #e0e0e0);
+        background: var(--white, #fff);
+      }
+
+      .commentButtonWrap {
+        justify-content: space-between;
+        display: flex;
+
+        .commentCancelButton {
+          border-radius: 6px;
+          border: 1px solid var(--blue, #2d71f7);
+          background: var(--white, #fff);
+          color: var(--blue, #2d71f7);
+        }
+
+        .commentAddButton {
+          border-radius: 6px;
+          background: var(--blue, #2d71f7);
+          color: var(--white, #fff);
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+button {
+  width: 120px;
+  height: 50px;
+}
