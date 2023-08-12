@@ -2,6 +2,7 @@
   margin: 0 auto;
   display: flex;
   width: 576px;
+  height: 80vh;
   padding: 40px 24px;
   flex-direction: column;
   align-items: center;
@@ -9,135 +10,143 @@
   border: 1px solid #e5e5e5;
   background: white;
 
-  .post {
-    display: flex;
-    padding: 0px 8px 24px 8px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
-    display: flex;
-    padding: 0px 8px 24px 8px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: stretch;
+  .posts {
+    overflow-y: scroll;
 
-    .writerDesktop {
+    .post {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding: 0px 8px 24px 8px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      align-self: stretch;
+      display: flex;
+      padding: 0px 8px 24px 8px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
       align-self: stretch;
 
-      .id {
+      .writerDesktop {
         display: flex;
-        padding-right: 0px;
+        justify-content: space-between;
         align-items: center;
-        gap: 16px;
-        flex: 1 0 0;
+        align-self: stretch;
 
-        .profileTumb {
-          width: 48px;
-          height: 48px;
+        .id {
+          display: flex;
+          padding-right: 0px;
+          align-items: center;
+          gap: 16px;
+          flex: 1 0 0;
+
+          .profileThumb {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+          }
+
+          .name {
+            color: black;
+            font-family: Apple SD Gothic Neo;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+          }
         }
 
-        .name {
+        .smallFont {
+          margin-left: 16px;
+        }
+
+        .red {
+          color: red;
+        }
+
+        .black {
           color: black;
-          font-family: Apple SD Gothic Neo;
-          font-size: 20px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
         }
       }
 
+      .Letters {
+        align-self: stretch;
+        color: black;
+        font-feature-settings:
+          'clig' off,
+          'liga' off;
+        font-family: Apple SD Gothic Neo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+      }
+
+      .actionInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+
+        .info {
+          display: flex;
+          padding: 0px 4px;
+          align-items: flex-start;
+          gap: 12px;
+          color: #999999;
+        }
+
+        .heart {
+          width: 32px;
+          height: 32px;
+        }
+      }
       .smallFont {
-        margin-left: 16px;
+        color: #999;
+        font-feature-settings:
+          'clig' off,
+          'liga' off;
+        font-family: Apple SD Gothic Neo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
       }
     }
+  }
+  .posts::-webkit-scrollbar {
+    display: none;
+  }
 
-    .Letters {
-      align-self: stretch;
-      color: black;
+  .buttonPlace {
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+    height: 56px;
+    margin-top: 28px;
+    align-items: flex-end;
+    gap: 8px;
+    align-self: stretch;
+
+    button {
+      display: flex;
+      width: 120px;
+      height: 56px;
+      padding: 0px 34px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      background-color: #2d71f7;
+      color: #fff;
+      text-align: center;
       font-feature-settings:
         'clig' off,
         'liga' off;
       font-family: Apple SD Gothic Neo;
-      font-size: 20px;
+      font-size: 16px;
       font-style: normal;
-      font-weight: 400;
-      line-height: 28px; /* 140% */
-    }
-
-    .actionInfo {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 8px;
-
-      .info {
-        display: flex;
-        padding: 0px 4px;
-        align-items: flex-start;
-        gap: 12px;
-        color: #999999;
-      }
-
-      .heart {
-        width: 32px;
-        height: 32px;
-      }
+      font-weight: 800;
+      line-height: normal;
     }
   }
-}
-
-.buttonPlace {
-  display: flex;
-  flex-direction: column;
-  width: 528px;
-  height: 56px;
-  align-items: flex-end;
-  gap: 8px;
-  align-self: stretch;
-
-  button {
-    display: flex;
-    width: 120px;
-    height: 56px;
-    padding: 0px 34px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    background-color: #2d71f7;
-    color: #fff;
-    text-align: center;
-    font-feature-settings:
-      'clig' off,
-      'liga' off;
-    font-family: Apple SD Gothic Neo;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-  }
-}
-
-.smallFont {
-  color: #999;
-  font-feature-settings:
-    'clig' off,
-    'liga' off;
-  font-family: Apple SD Gothic Neo;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px; /* 137.5% */
-}
-
-.red {
-  color: red;
-}
-
-.black {
-  color: black;
 }
