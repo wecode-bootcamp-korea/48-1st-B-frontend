@@ -1,0 +1,89 @@
+@import '/src/style/variables.scss';
+.login {
+  width: 576px;
+  min-width: 320px;
+  height: 80vh;
+  padding: 0 7%;
+  border: 1px solid $Grey80;
+}
+section {
+  height: 100%;
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .logo img {
+      display: block;
+      width: 45%;
+      margin: 80% auto 15%;
+    }
+    .wecodeLogo {
+      h1 {
+        display: none;
+      }
+      img {
+        display: block;
+        width: 45%;
+        margin: 0 auto;
+      }
+    }
+  }
+  form {
+    margin-top: 30%;
+    input {
+      width: 100%;
+      padding: 15px 15px;
+      margin-bottom: 8px;
+      border-radius: 5px;
+      border: 1px solid $Grey80;
+      color: $Grey60;
+      &:focus {
+        outline: 1px solid $Black;
+      }
+    }
+    button {
+      width: 100%;
+      margin-top: 3px;
+      padding: 15px 0;
+      border: none;
+      border-radius: 5px;
+      background-color: $Blue;
+      color: $White;
+      font-weight: 500;
+      font-size: 17px;
+      cursor: pointer;
+      &:hover {
+        background-color: $Navy;
+      }
+    }
+  }
+  .link {
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+    button {
+      background-color: inherit;
+      border: none;
+      font-size: 17px;
+      position: absolute;
+      cursor: pointer;
+      &:first-child {
+        left: 28%;
+      }
+      &:last-child {
+        right: 22%;
+      }
+    }
+  }
+  .link::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: $Grey80;
+    position: absolute;
+    left: calc(50% - 1px);
+    top: 4px;
+  }
+}
