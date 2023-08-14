@@ -12,6 +12,7 @@
 
   .posts {
     overflow-y: scroll;
+    flex: 1;
 
     .post {
       display: flex;
