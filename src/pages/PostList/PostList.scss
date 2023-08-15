@@ -14,7 +14,7 @@
     overflow-y: scroll;
     flex: 1;
   }
-  .posts::-webkit-scrollbar {
+  &::-webkit-scrollbar {
     display: none;
   }
 

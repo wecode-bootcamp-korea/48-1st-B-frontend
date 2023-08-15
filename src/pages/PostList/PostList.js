@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './PostList.scss';
 import PostListPost from './components/PostListPost';
+import './PostList.scss';
 
 const PostList = () => {
   const [postData, setPostData] = useState([]);
