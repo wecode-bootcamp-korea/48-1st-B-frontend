@@ -1,50 +1,55 @@
-.commentUserBox {
+.userBox {
   margin: 20px;
   gap: 0 24px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
-  .commentUserWrap {
+  .userWrap {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
-    .commentUser {
+    .user {
       width: 50px;
       height: 50px;
       border-radius: 50%;
     }
 
-    .commentContentBox {
+    .contentBox {
       display: flex;
       flex-direction: column;
       gap: 10px;
       margin-left: 20px;
 
-      .commentUserName {
+      .userName {
         font-size: 20px;
         font-weight: 700;
       }
 
-      .commentTextArea {
+      .textArea {
+        padding: 10px;
         border-radius: 6px;
         border: 1px solid var(--grey-88, #e0e0e0);
         background: var(--white, #fff);
       }
 
-      .commentButtonWrap {
+      .buttonWrap {
         justify-content: space-between;
         display: flex;
+        .customButton {
+          width: 120px;
+          height: 50px;
+        }
 
-        .commentCancelButton {
+        .cancelButton {
           border-radius: 6px;
           border: 1px solid var(--blue, #2d71f7);
           background: var(--white, #fff);
           color: var(--blue, #2d71f7);
         }
 
-        .commentAddButton {
+        .addButton {
           border-radius: 6px;
           background: var(--blue, #2d71f7);
           color: var(--white, #fff);
@@ -53,9 +58,4 @@
       }
     }
   }
-}
-
-button {
-  width: 120px;
-  height: 50px;
 }

@@ -28,6 +28,7 @@
       }
 
       .textArea {
+        padding: 10px;
         border-radius: 6px;
         border: 1px solid var(--grey-88, #e0e0e0);
         background: var(--white, #fff);
@@ -42,6 +43,10 @@
       .buttonWrap {
         justify-content: space-between;
         display: flex;
+        .customButton {
+          width: 120px;
+          height: 50px;
+        }
 
         .cancelButton {
           border-radius: 6px;
@@ -66,9 +71,4 @@
       }
     }
   }
-}
-
-button {
-  width: 120px;
-  height: 50px;
 }
