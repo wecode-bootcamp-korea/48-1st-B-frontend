@@ -24,8 +24,10 @@ const Reply = ({ comments }) => {
           <div className="postHead">
             <p className="name">{commentUserName}</p>
             <p className="smallFont">{createdAt}</p>
-            <p className="smallFont red">삭제</p>
-            <p className="smallFont black">수정</p>
+            <div className="deleteCorrection">
+              <p className="smallFont red">삭제</p>
+              <p className="smallFont black">수정</p>
+            </div>
           </div>
           <p className="replyLetters">{commentMessage}</p>
         </div>
