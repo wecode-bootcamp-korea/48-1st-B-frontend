@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Posts from './components/Posts';
 import './PostList.scss';
 
@@ -25,7 +26,9 @@ const PostList = () => {
         <Posts postData={postData} />
       </div>
       <div className="buttonPlace">
-        <button>글쓰기</button>
+        <Link to="/post-add">
+          <button>글쓰기</button>
+        </Link>
       </div>
     </div>
   );

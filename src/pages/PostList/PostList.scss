@@ -29,6 +29,10 @@
     gap: 8px;
     align-self: stretch;
 
+    a {
+      text-decoration: none;
+    }
+
     button {
       display: flex;
       width: 120px;
