@@ -4,3 +4,15 @@
   box-sizing: border-box;
   font-family: 'Noto Sans KR', sans-serif;
 }
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
