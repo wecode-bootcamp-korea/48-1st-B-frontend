@@ -47,6 +47,11 @@
       font-style: normal;
       font-weight: 800;
       line-height: normal;
+
+      &:hover {
+        border-radius: 6px;
+        background: #083e7f;
+      }
     }
   }
 }
