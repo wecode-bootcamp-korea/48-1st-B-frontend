@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Reply from './Reply';
 import './Posts.scss';
 
 const Posts = ({ postData }) => {
+  const [replyToggle, setReplyToggle] = useState(false);
+
+  const isReplyToggle = () => {
+    setReplyToggle(replyToggle => !replyToggle);
+  };
+
   return postData.map(feed => {
     const {
       id,
@@ -17,7 +23,7 @@ const Posts = ({ postData }) => {
 
     return (
       <div className="post" key={id}>
-        <div className="postAll">
+        <div className="postAll" onClick={isReplyToggle}>
           <div className="writerDesktop">
             <div className="id">
               <img className="profileThumb" src={userProfile} alt="profile" />
@@ -42,7 +48,7 @@ const Posts = ({ postData }) => {
             </div>
           </div>
         </div>
-        <div className="reply">
+        <div className={replyToggle ? 'reply' : 'replyHide'}>
           <div className="replyInput">
             <input type="text" placeholder="댓글을 작성해주세요" />
             <button>댓글 게시</button>

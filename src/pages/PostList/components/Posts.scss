@@ -9,7 +9,6 @@
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  border-bottom: 1px solid #e6e6e6;
 
   .postAll {
     display: flex;
@@ -116,6 +115,8 @@
     flex-direction: column;
     width: 100%;
     gap: 24px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 24px;
 
     .replyInput {
       display: flex;
@@ -157,5 +158,8 @@
       gap: 24px;
       align-self: stretch;
     }
+  }
+  .replyHide {
+    display: none;
   }
 }
