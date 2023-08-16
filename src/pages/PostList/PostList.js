@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PostListPost from './components/PostListPost';
+import Posts from './components/Posts';
 import './PostList.scss';
 
 const PostList = () => {
@@ -18,10 +18,11 @@ const PostList = () => {
       });
   }, []);
 
+  if (postData.length === 0) return null;
   return (
     <div className="postList">
       <div className="posts">
-        <PostListPost postData={postData} />
+        <Posts postData={postData} />
       </div>
       <div className="buttonPlace">
         <button>글쓰기</button>

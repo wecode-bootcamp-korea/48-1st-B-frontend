@@ -1,7 +1,8 @@
 import React from 'react';
-import './PostListPost.scss';
+import Reply from './Reply';
+import './Posts.scss';
 
-const PostListPost = ({ postData }) => {
+const Posts = ({ postData }) => {
   return postData.map(feed => {
     const {
       id,
@@ -11,6 +12,7 @@ const PostListPost = ({ postData }) => {
       userLetter,
       likeCount,
       commentCount,
+      comments,
     } = feed;
 
     return (
@@ -36,9 +38,18 @@ const PostListPost = ({ postData }) => {
             <img src="images/heart.png" alt="heart" />
           </div>
         </div>
+        <div className="replyInput">
+          <input type="text" placeholder="댓글을 작성해주세요" />
+          <button>댓글 게시</button>
+        </div>
+        {comments.length > 0 && (
+          <div className="replyList">
+            <Reply comments={comments} />
+          </div>
+        )}
       </div>
     );
   });
 };
 
-export default PostListPost;
+export default Posts;
