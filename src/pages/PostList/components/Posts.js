@@ -18,6 +18,15 @@ const Posts = ({ postData }) => {
     return yearMonthDate;
   };
 
+  const postDelete = () => {
+    fetch('/data/postList.json', {
+      method: 'DELETE',
+      body: JSON.stringify({
+        postId: postData.map(el => el.postId),
+      }),
+    });
+  };
+
   return postData.map(feed => {
     const {
       postId,
@@ -42,7 +51,9 @@ const Posts = ({ postData }) => {
             <div className="right">
               <p className="smallFont">{dateChange(new Date(createdAt))}</p>
               <div className={isMyPost ? 'myPost' : 'myPostHide'}>
-                <p className="smallFont red">삭제</p>
+                <p className="smallFont red" onClick={postDelete}>
+                  삭제
+                </p>
                 <p className="smallFont black">수정</p>
               </div>
             </div>

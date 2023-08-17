@@ -14,6 +14,15 @@ const Reply = ({ comments }) => {
       return yearMonthDate;
     };
 
+    const deleteReply = () => {
+      fetch('/data/postList.json', {
+        method: 'DELETE',
+        body: JSON.stringify({
+          commentId: comments.commentId,
+        }),
+      }).then(res => res.json());
+    };
+
     return (
       <div className="replyPost" key={commentId}>
         <div className="left">
@@ -25,7 +34,9 @@ const Reply = ({ comments }) => {
             <div className="topRight">
               <p className="smallFont">{dateChange(new Date(createdAt))}</p>
               <div className="deleteCorrection">
-                <p className="smallFont red">삭제</p>
+                <p className="smallFont red" onClick={deleteReply}>
+                  삭제
+                </p>
                 <p className="smallFont black">수정</p>
               </div>
             </div>
