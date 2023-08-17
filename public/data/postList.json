@@ -1,118 +1,136 @@
-[
-  {
-    "id": 1,
-    "userProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-    "userName": "Tommy",
-    "createdAt": "23.08.10",
-    "userLetter": "일라이자 효과란 무엇일까?",
-    "likeCount": 0,
-    "commentCount": 0,
-    "comments": [
-      {
-        "id": 1,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      },
-      {
-        "id": 2,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      },
-      {
-        "id": 3,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "userProfile": "https://i.pinimg.com/474x/79/50/5b/79505b031fb97b848044ad0f4935cd98.jpg",
-    "userName": "Lucy",
-    "createdAt": "23.08.11",
-    "userLetter": "일라이자 효과는 인간의 사고 과정과 감정을 AI 시스템에 잘못 돌리는 사람들의 경향을 말한다.",
-    "likeCount": 0,
-    "commentCount": 0,
-    "comments": [
-      {
-        "id": 1,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      },
-      {
-        "id": 2,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      },
-      {
-        "id": 3,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "userProfile": "https://i.pinimg.com/474x/0c/c7/ec/0cc7ecf385c54f967300639cbc679b7b.jpg",
-    "userName": "Joy",
-    "createdAt": "23.08.12",
-    "userLetter": "따라서 시스템이 실제보다 더 지능적이라고 믿는다.",
-    "likeCount": 0,
-    "commentCount": 0,
-    "comments": [
-      {
-        "id": 1,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      },
-      {
-        "id": 2,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      },
-      {
-        "id": 3,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "userProfile": "https://i.pinimg.com/474x/ea/1c/23/ea1c238b9e9f3f0f2adc89b437588df6.jpg",
-    "userName": "John",
-    "createdAt": "23.08.14",
-    "userLetter": "이 현상은 1966년 MIT 교수 조셉 웨이젠바움이 만든 챗봇인 ELIZA의 이름을 따서 명명되었다.",
-    "likeCount": 0,
-    "commentCount": 0,
-    "comments": [
-      {
-        "id": 1,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      },
-      {
-        "id": 2,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      },
-      {
-        "id": 3,
-        "commentUserProfile": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
-        "commentUserName": "Lily",
-        "commentMessage": "일라이자 효과가 뭔데!"
-      }
-    ]
-  }
-]
+{
+  "data": [
+    {
+      "posstId": 1,
+      "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+      "userName": "이지혜",
+      "isMyPost": true,
+      "content": "점심 뭐 먹을까?",
+      "likeCount": 9,
+      "commentCount": 4,
+      "comments": [
+        {
+          "commentId": 1,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "정효은",
+          "comment": "고기먹읍시다!",
+          "createdAt": "2023-08-16T"
+        },
+        {
+          "commentId": 2,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "성희진",
+          "comment": "떡볶이 먹어여~~",
+          "createdAt": "2023-08-16T"
+        },
+        {
+          "commentId": 3,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "이지혜",
+          "comment": "마라탕..?",
+          "createdAt": "2023-08-16T"
+        }
+      ],
+      "createdAt": "2023-08-16T"
+    },
+    {
+      "posstId": 2,
+      "profileImage": "https://i.pinimg.com/474x/79/50/5b/79505b031fb97b848044ad0f4935cd98.jpg",
+      "userName": "이지혜",
+      "isMyPost": false,
+      "content": "점심 뭐 먹을까?",
+      "likeCount": 9,
+      "commentCount": 4,
+      "comments": [
+        {
+          "commentId": 1,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "정효은",
+          "comment": "고기먹읍시다!",
+          "createdAt": "2023-08-16T"
+        },
+        {
+          "commentId": 2,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "성희진",
+          "comment": "떡볶이 먹어여~~",
+          "createdAt": "2023-08-16T"
+        },
+        {
+          "commentId": 3,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "이지혜",
+          "comment": "마라탕..?",
+          "createdAt": "2023-08-16T"
+        }
+      ],
+      "createdAt": "2023-08-16T"
+    },
+    {
+      "posstId": 3,
+      "profileImage": "https://i.pinimg.com/474x/0c/c7/ec/0cc7ecf385c54f967300639cbc679b7b.jpg",
+      "userName": "이지혜",
+      "isMyPost": false,
+      "content": "점심 뭐 먹을까?",
+      "likeCount": 9,
+      "commentCount": 4,
+      "comments": [
+        {
+          "commentId": 1,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "정효은",
+          "comment": "고기먹읍시다!",
+          "createdAt": "2023-08-16T"
+        },
+        {
+          "commentId": 1,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "성희진",
+          "comment": "떡볶이 먹어여~~",
+          "createdAt": "2023-08-16T"
+        },
+        {
+          "commentId": 1,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "이지혜",
+          "comment": "마라탕..?",
+          "createdAt": "2023-08-16T"
+        }
+      ],
+      "createdAt": "2023-08-16T"
+    },
+    {
+      "posstId": 4,
+      "profileImage": "https://i.pinimg.com/474x/ea/1c/23/ea1c238b9e9f3f0f2adc89b437588df6.jpg",
+      "userName": "이지혜",
+      "isMyPost": false,
+      "content": "점심 뭐 먹을까?",
+      "likeCount": 9,
+      "commentCount": 4,
+      "comments": [
+        {
+          "commentId": 1,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "정효은",
+          "comment": "고기먹읍시다!",
+          "createdAt": "2023-08-16T"
+        },
+        {
+          "commentId": 1,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "성희진",
+          "comment": "떡볶이 먹어여~~",
+          "createdAt": "2023-08-16T"
+        },
+        {
+          "commentId": 1,
+          "profileImage": "https://i.pinimg.com/474x/77/86/b5/7786b5d206787a2529cead7d695390a5.jpg",
+          "userName": "이지혜",
+          "comment": "마라탕..?",
+          "createdAt": "2023-08-16T"
+        }
+      ],
+      "createdAt": "2023-08-16T"
+    }
+  ]
+}

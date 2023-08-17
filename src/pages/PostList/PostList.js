@@ -15,7 +15,7 @@ const PostList = () => {
     })
       .then(res => res.json())
       .then(result => {
-        setPostData(result);
+        setPostData(result.data);
       });
   }, []);
 

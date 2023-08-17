@@ -55,12 +55,18 @@
           margin-left: 16px;
         }
 
-        .red {
-          color: red;
+        .myPost {
+          .red {
+            color: red;
+          }
+
+          .black {
+            color: black;
+          }
         }
 
-        .black {
-          color: black;
+        .myPostHide {
+          display: none;
         }
       }
     }

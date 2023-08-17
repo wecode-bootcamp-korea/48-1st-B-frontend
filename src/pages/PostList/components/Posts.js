@@ -11,32 +11,35 @@ const Posts = ({ postData }) => {
 
   return postData.map(feed => {
     const {
-      id,
-      userProfile,
+      postId,
+      profileImage,
       userName,
-      createdAt,
-      userLetter,
+      isMyPost,
+      content,
       likeCount,
       commentCount,
+      createdAt,
       comments,
     } = feed;
 
     return (
-      <div className="post" key={id}>
+      <div className="post" key={postId}>
         <div className="postAll" onClick={isReplyToggle}>
           <div className="writerDesktop">
             <div className="id">
-              <img className="profileThumb" src={userProfile} alt="profile" />
+              <img className="profileThumb" src={profileImage} alt="profile" />
               <p className="name">{userName}</p>
             </div>
             <div className="right">
               <p className="smallFont">{createdAt}</p>
-              <p className="smallFont red">삭제</p>
-              <p className="smallFont black">수정</p>
+              <div className={isMyPost ? 'myPost' : 'myPostHide'}>
+                <p className="smallFont red">삭제</p>
+                <p className="smallFont black">수정</p>
+              </div>
             </div>
           </div>
 
-          <p className="letters">{userLetter}</p>
+          <p className="letters">{content}</p>
 
           <div className="actionInfo">
             <div className="info">
