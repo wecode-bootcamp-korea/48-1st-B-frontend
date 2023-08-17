@@ -9,6 +9,15 @@ const Posts = ({ postData }) => {
     setReplyToggle(replyToggle => !replyToggle);
   };
 
+  const dateChange = today => {
+    const year = String(today.getFullYear()).slice(-2);
+    const month = today.getMonth();
+    const date = today.getDate();
+    const yearMonthDate = `${year}-${month}-${date}`;
+
+    return yearMonthDate;
+  };
+
   return postData.map(feed => {
     const {
       postId,
@@ -31,7 +40,7 @@ const Posts = ({ postData }) => {
               <p className="name">{userName}</p>
             </div>
             <div className="right">
-              <p className="smallFont">{createdAt}</p>
+              <p className="smallFont">{dateChange(new Date(createdAt))}</p>
               <div className={isMyPost ? 'myPost' : 'myPostHide'}>
                 <p className="smallFont red">삭제</p>
                 <p className="smallFont black">수정</p>
