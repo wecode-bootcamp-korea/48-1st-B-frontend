@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './PostEditing.scss';
+import { Button } from '../PostAdd/components/Post.jsx';
 
 const PostEditing = () => {
   const [editComment, setEditComment] = useState('');
@@ -55,18 +56,16 @@ const PostEditing = () => {
               value={editComment}
             />
             <div className="buttonWrap">
-              <button
-                onClick={handleEditCancle}
+              <Button
                 className="customButton cancelButton"
-              >
-                취소
-              </button>
-              <button
-                onClick={handleEditAdd}
+                buttonName="취소"
+                active={handleEditCancle}
+              />
+              <Button
                 className="customButton addButton"
-              >
-                게시
-              </button>
+                buttonName="게시"
+                active={handleEditAdd}
+              />
             </div>
           </div>
         </div>

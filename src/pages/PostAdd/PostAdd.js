@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './PostAdd.scss';
+import { Button } from '../PostAdd/components/Post.jsx';
 
 const PostAdd = () => {
   const [comment, setComment] = useState('');
@@ -31,8 +32,7 @@ const PostAdd = () => {
           'Content-Type': 'application/json;charset=utf-8',
         },
         body: JSON.stringify({
-          title: 'update title',
-          content: '서버에 요청할때 담아서 보는 정보',
+          content: '유저가 작성한 글',
         }),
       })
         .then(response => response.json)
@@ -58,18 +58,20 @@ const PostAdd = () => {
           />
 
           <div className="buttonWrap">
-            <button onClick={cancel} className="customButton cancelButton">
-              취소
-            </button>
-            <button onClick={posting} className="customButton addButton">
-              게시
-            </button>
+            <Button
+              className="customButton cancelButton"
+              buttonName="취소"
+              active={cancel}
+            />
+            <Button
+              className="customButton addButton"
+              buttonName="게시"
+              active={posting}
+            />
           </div>
         </div>
       </div>
-      ç
     </div>
   );
 };
-
 export default PostAdd;

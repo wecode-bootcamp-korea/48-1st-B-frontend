@@ -43,21 +43,26 @@
       .buttonWrap {
         justify-content: space-between;
         display: flex;
+
         .customButton {
           width: 120px;
           height: 50px;
+          border-radius: 6px;
         }
 
         .cancelButton {
-          border-radius: 6px;
           border: 1px solid var(--blue, #2d71f7);
           background: var(--white, #fff);
           color: var(--blue, #2d71f7);
           cursor: pointer;
         }
+        .cancelButton:hover {
+          border: 1px solid var(--navy, #083e7f);
+          background: var(--white, #fff);
+          color: var(--navy, #083e7f);
+        }
 
         .addButton {
-          border-radius: 6px;
           border: none;
           background: var(--white, #2d71f7);
           color: var(--white, #fff);
