@@ -39,29 +39,34 @@
         line-height: normal;
       }
 
-      .smallFont {
-        color: #999;
-        font-feature-settings:
-          'clig' off,
-          'liga' off;
-        font-family: Apple SD Gothic Neo;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 22px;
-      }
-
-      .deleteCorrection {
+      .topRight {
         display: flex;
-        align-items: center;
         gap: 12px;
 
-        .red {
-          color: red;
+        .smallFont {
+          color: #999;
+          font-feature-settings:
+            'clig' off,
+            'liga' off;
+          font-family: Apple SD Gothic Neo;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 22px;
         }
 
-        .black {
-          color: black;
+        .deleteCorrection {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+
+          .red {
+            color: red;
+          }
+
+          .black {
+            color: black;
+          }
         }
       }
     }
