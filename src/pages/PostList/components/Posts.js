@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Reply from './Reply';
 import './Posts.scss';
 
 const Posts = ({ postData }) => {
   const [replyToggle, setReplyToggle] = useState(false);
+
+  const navigate = useNavigate();
+  const goToEdit = () => {
+    navigate('/post-editing');
+  };
 
   const isReplyToggle = () => {
     setReplyToggle(replyToggle => !replyToggle);
@@ -54,7 +60,9 @@ const Posts = ({ postData }) => {
                 <p className="smallFont red" onClick={postDelete}>
                   삭제
                 </p>
-                <p className="smallFont black">수정</p>
+                <p className="smallFont black" onClick={goToEdit}>
+                  수정
+                </p>
               </div>
             </div>
           </div>

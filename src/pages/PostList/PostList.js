@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Posts from './components/Posts';
 import './PostList.scss';
 
 const PostList = () => {
   const [postData, setPostData] = useState([]);
+
+  const navigate = useNavigate();
+  const goToWrite = () => {
+    navigate('/post-add');
+  };
 
   useEffect(() => {
     fetch('/data/postList.json', {
@@ -26,9 +31,7 @@ const PostList = () => {
         <Posts postData={postData} />
       </div>
       <div className="buttonPlace">
-        <Link to="/post-add">
-          <button>글쓰기</button>
-        </Link>
+        <button onClick={goToWrite}>글쓰기</button>
       </div>
     </div>
   );
