@@ -1,0 +1,63 @@
+.postList {
+  margin: 0 auto;
+  display: flex;
+  width: 576px;
+  height: 80vh;
+  padding: 40px 24px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  background: white;
+
+  .posts {
+    width: 100%;
+    overflow-y: scroll;
+    flex: 1;
+    cursor: pointer;
+  }
+  & ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .buttonPlace {
+    display: flex;
+    flex-direction: column;
+    width: 528px;
+    height: 56px;
+    margin-top: 28px;
+    align-items: flex-end;
+    gap: 8px;
+    align-self: stretch;
+
+    a {
+      text-decoration: none;
+    }
+
+    button {
+      display: flex;
+      width: 120px;
+      height: 56px;
+      padding: 0px 34px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 6px;
+      background-color: #2d71f7;
+      color: #fff;
+      text-align: center;
+      font-feature-settings:
+        'clig' off,
+        'liga' off;
+      font-family: Apple SD Gothic Neo;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+
+      &:hover {
+        border-radius: 6px;
+        background: #083e7f;
+      }
+    }
+  }
+}
